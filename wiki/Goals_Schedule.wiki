@@ -1,0 +1,31 @@
+#summary Project goal and schedule
+
+= Introduction =
+
+Goal of this project is to create open source libraries and code example on Mac OS X in the factory automation / industrial automation domain. As an example, free open protocol Modbus was selected. 
+
+First phase of this project would be a rapid development to make a working prototype to test the concept and gather useful experience. Second part of the project would be cleaning up the code, adding feature and robustness. 
+
+A mixture of C++ and Objective-C/Cocoa was selected for implementation, since Core C++ code could be reused on other Operating Systems. A thin layer over C++ Core will be developed in Cocoa for interfacing. Serial port or TCP/IP port pooling and inter-process/inter-thread communication will be done in Cocoa to utilize existing Mac OS X technologies, instead of making C++ libraries using POSIX calls. 
+
+A simple GUI will be developed to test the working prototype and may be extended to a more feature-rich in the second phase. 
+
+_As a long-term goal, this project will become of a SCADA solution for Mac OS X, hopefully getting enough visibility to introduce Macs into this domain_
+
+= Details =
+
+As of 06/06/2007:
+
+Working prototype:
+
+1. Core - 80% done. 
+     - Needed: 
+         * Message classes for each function code for convenience.
+         * Final testing and verification. 
+
+2. Comm - to be started from about 06/08~ 
+
+
+ 
+
+
